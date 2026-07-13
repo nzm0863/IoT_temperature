@@ -1,0 +1,4 @@
+#pragma once
+
+#define LINE_TOKEN "YOUR_LINE_CHANNEL_ACCESS_TOKEN"
+#define LINE_USER_ID "YOUR_USER_ID"
