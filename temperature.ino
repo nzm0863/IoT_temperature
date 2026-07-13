@@ -1,12 +1,15 @@
 #include <DHT.h>
+#include "wifi_manager.h"
+#include "color_press.h"
 
 #define DHTPIN 5       // GPIO5
-#define DHTTYPE DHT22  // DHT22なら DHT22 に変更
+#define DHTTYPE DHT22  
 
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   Serial.begin(115200);
+  wifiConnect();
   dht.begin();
 
   Serial.println("DHT Test Start");
