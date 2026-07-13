@@ -82,9 +82,10 @@ void loop() {
       + String(temperature) + "℃\\n湿度: " + String(humidity) + "%";
 
     sendLineMessage(message);
+    isAlertSent = true;
   }
 
-  if (temperature <= 20) {
+  if (temperature <= 23) {
     isAlertSent = false;
   }
 
